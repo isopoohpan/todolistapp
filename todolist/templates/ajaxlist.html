@@ -1,0 +1,24 @@
+{% if tasks %}
+{% for task in tasks %}
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="task">
+        	<a href="{% url 'edit' pk=task.pk %}">
+        		<img src="https://s3.amazonaws.com/checkli.com/featured/free-checklist-3.png">
+        	</a>
+        	<div class="task-content">
+        		<div class="detail">
+                <h3><a href="{% url 'edit' pk=task.pk %}">{{ task.title }}</a></h3>
+                <p>{{ task.content|linebreaksbr }}</p>
+                </div>
+                <div class="actions">
+                    <a href="{% url 'delete' pk=task.pk %}">
+                	   <img src="https://www.checkli.com/app/css/images/trash-mychecklists.png">
+                    </a>
+                </div>
+        	</div>
+        </div>
+    </div>
+{% endfor %}
+{% else %}
+<div class="noexist"><h2>There doesn't exist any tasks</h2></div>
+{% endif %}

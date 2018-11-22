@@ -1,0 +1,207 @@
+.page-header {
+    background-color: #fff;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #2a6496;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.task-form textarea, .task-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.container-fluid {
+	padding: auto 50px !important;
+}
+
+.newbtn {
+	max-width: 200px;
+	min-width: 130px;
+	width: 100%;
+	height: 50px;
+}
+
+.newbtn h3{
+	margin: 0 0;
+}
+
+.task {
+    margin-bottom: 70px;
+    background-color: white;
+}
+
+.task a img{
+	width: 100%;
+	height: auto;
+	transform-origin: 50%;
+	transition: transform .5s;
+}
+
+.task .task-content {
+	padding: 0 15px;
+}
+
+.task .task-content .detail {
+	height: 200px;
+}
+
+.task .actions{
+	padding: 10px 0;
+	border-top: 1px solid #e8e8e8;
+	height: 50px;
+}
+
+.task .actions img{
+	float: right;
+	width: 20px;
+	width: 20px;
+}
+
+.task h1 a, .task h1 a:visited {
+    color: #000000;
+}
+
+.todo-form {
+	padding: 
+}
+
+.page {
+	background-color: white;
+	min-height: 850px;
+/*	padding: 20px 150px;*/
+	padding: 20px 130px;
+}
+
+
+/*this is for new task page*/
+.page h1 {
+	color: #2a6496;
+	text-align: center;
+}
+
+.todo-form label{
+	font-size: 24px;
+	font-family: 'Lobster', cursive;
+	color: #2a6496;
+}
+.todo-form label[for="id_title"],
+.todo-form label[for="id_content"],
+.todo-form label[for="id_members"] {
+	width: 100%;
+}
+
+.todo-form [id*="id_"] {
+	width: 100%
+}
+
+.todo-form input,.todo-form textarea, .todo-form select{
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.todo-form #id_title {
+	display: block;
+	height: 34px;
+}
+
+.todo-form #id_content{
+	display: block;
+    min-height: 300px;
+}
+
+.todo-form #id_members{
+	display: block;
+    min-height: 100px;
+    line-height: 1.42857143;
+}
+
+.todo-form #id_timeslot{
+	width: 60%;
+}
+
+.todo-form #id_published{
+	width: 30px;
+	height: 25px;
+}
+
+.todo-form .save{
+	max-width: 200px;
+	min-width: 130px;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+}
+
+
+/*search css*/
+div.search {
+	max-width: 500px;
+	margin-bottom: 20px;
+} 
+div.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+}
+
+div.search button {
+    float: left;
+    width: 15%;
+    height: 46px;
+    padding: 10px;
+    background: #2d6ca2;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+div.search img{
+	width: 46px;
+	float: left;
+}
+div.search button:hover {
+    background: #0b7dda;
+}
+
+div.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.noexist h2{
+	text-align: center;
+	color: #2d6ca2;
+}
